@@ -25,4 +25,13 @@
   :straight t
   :hook (prog-mode . smartparens-mode))
 
+;;;;;;;;;;
+;; TODO ;;
+;;;;;;;;;;
+
+(use-package hl-todo
+  :straight t
+  :hook
+  (prog-mode . hl-todo-mode))
+
 ;;; prog.el ends here
