@@ -68,4 +68,23 @@
   (which-key-setup-minibuffer)
   (which-key-mode 1))
 
+;;;;;;;;;;;;;;;
+;; Scrolling ;;
+;;;;;;;;;;;;;;;
+
+;; This section will probably have to be removed for Emacs 29 since it
+;; implements smooth scrolling.
+
+;; Scroll keyboard one line at a time.
+(setq scroll-step 1)
+
+;; Scroll mouse one line at  a time.
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
+
+;; No acceleration.
+(setq mouse-wheel-progressive-speed nil)
+;; Scroll window under mouse.
+(setq mouse-wheel-follow-mouse 't)
+
+
 ;;; ui.el ends here
