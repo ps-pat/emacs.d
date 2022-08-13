@@ -5,3 +5,6 @@ org-roam.db
 recentf
 straight/
 transient/
+.dap-breakpoints
+.local/
+tramp
