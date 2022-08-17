@@ -8,6 +8,7 @@
   (python-mode . lsp)
   (python-mode . (lambda ()
                    (flycheck-select-checker 'python-flake8)
+                   (add-to-list 'flycheck-disabled-checkers 'python-pylint)
                    (setq flycheck-flake8rc "~/.config/flake8"
                          python-shell-interpreter "ipython"
                          python-shell-interpreter-args "-i --simple-prompt --InteractiveShell.display_page=True"
