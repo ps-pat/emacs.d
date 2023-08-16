@@ -16,4 +16,9 @@
                          python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: ")))
   (lsp-mode . (lambda () (setq lsp-diagnostic-package :none))))
 
+(require 'dap-python)
+
+(use-package pyvenv
+  :straight t)
+
 ;;; python.el ends here

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Julia prompt
+# key: julia>
+# --
+<span class="hljs-repl">julia&gt;</span> $0

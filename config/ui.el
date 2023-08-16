@@ -86,5 +86,10 @@
 ;; Scroll window under mouse.
 (setq mouse-wheel-follow-mouse 't)
 
+;;;;;;;;;;;
+;; Other ;;
+;;;;;;;;;;;
+
+(add-hook 'before-save-hook #'whitespace-cleanup)
 
 ;;; ui.el ends here

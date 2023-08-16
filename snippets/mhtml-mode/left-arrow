@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: R assignment operator
+# key: <-
+# --
+&lt;- $0

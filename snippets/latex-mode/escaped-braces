@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Escaped Braces
+# key: {}
+# --
+\\left\\{ ${1:content} \\right\\}$0

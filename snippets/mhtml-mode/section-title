@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Section title slide
+# key: section-title
+# --
+<section>
+  <section class="title-slide">
+  <h1>${1:Title}</h1>
+  </section>
+  $0
+</section>

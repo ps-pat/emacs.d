@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Description item
+# key: dt
+# --
+<dt>${1:title}</dt><dd>${2:content}</dd>$0

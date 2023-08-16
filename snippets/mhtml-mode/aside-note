@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Note in an <aside> section
+# key: aside-notes
+# --
+<aside class="notes">
+$0
+</aside>

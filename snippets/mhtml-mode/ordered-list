@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Ordered List
+# key: ol
+# --
+<ol>
+  <li>${1:content}</li>$0
+</ol>

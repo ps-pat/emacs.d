@@ -1,0 +1,4 @@
+# key: left
+# name: left-right
+# --
+\left${1:delim} ${3:content} \right${2:delim} $0

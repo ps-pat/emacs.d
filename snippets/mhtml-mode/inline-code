@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Inline code
+# key: code
+# --
+<code class="language-${1:lang} hljs">${2:code}</code>$0

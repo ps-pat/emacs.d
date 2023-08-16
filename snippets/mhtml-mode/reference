@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: reference
+# key: reference
+# --
+<span class="reference">${1:number}</span>$0

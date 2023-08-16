@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Code block
+# key: precode
+# --
+<pre><code class="language-${1:lang} hljs" data-trim data-noescape>
+$0
+</code></pre>

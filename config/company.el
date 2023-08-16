@@ -4,23 +4,22 @@
 
 (use-package company
   :straight t
-  :after company-tabnine
+  :bind
+  (("C-c \/" . company-complete))
   :config
   (setq company-show-quick-access t
-        company-idle-delay 0.75
+        company-idle-delay 0.25
         company-transformers '(company-sort-by-backend-importance)
-        company-tooltip-limit 3
-        company-tooltip-minimum 3
+        ; company-tooltip-limit 3
+        ; company-tooltip-minimum 3
         company-tooltip-flip-when-above t
+        company-require-match nil
+        company-minimum-prefix-length 3
+        company-frontends '(company-pseudo-tooltip-frontend
+                            company-preview-frontend
+                            company-echo-metadata-frontend)
         company-backends '((company-capf
-                            :with
-                            company-tabnine
-                            company-dabbrev
-                            :separate))))
-
-(use-package company-tabnine
-  :straight t
-  :config
-  (setq company-tabnine-max-num-results 2))
+                            company-dabbrev-code
+                            company-keywords))))
 
 ;;; company.el ends here

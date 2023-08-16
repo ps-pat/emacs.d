@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Prompt for R code
+# key: r>
+# --
+<span class="hljs-repl">r$&gt;</span> $0

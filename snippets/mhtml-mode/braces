@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Braces pair
+# key: {}
+# --
+&#123;
+    ${1:code}
+&#125;
+$0

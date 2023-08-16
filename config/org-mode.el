@@ -3,10 +3,21 @@
 ;;; Code:
 
 (use-package org
-  :straight t)
+  :straight t
+  :config
+  (setq org-startup-folded "fold"
+        org-format-latex-options
+        (plist-put org-format-latex-options :scale 1.5)
+        org-startup-with-latex-preview t)
+  (add-to-list 'org-latex-packages-alist
+               '("" "pat-math" t nil))
+  :hook (org-mode . (lambda ()
+                      (yas-reload-all)
+                      (yas-minor-mode))))
 
 (use-package org-roam
   :straight t
+  :after (org)
   :custom
   (org-roam-directory (file-truename "~/RoamNotes"))
   :bind
